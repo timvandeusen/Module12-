@@ -25,7 +25,7 @@ function viewAllDepartments() {
     connection.query('SELECT * FROM departments', (err, results) => {
       if (err) throw err;
       console.log("\n=== All Departments ===");
-      console.table(results); // Use console.table for formatting
+      console.table(results); 
       mainMenu();
     });
   }
@@ -35,7 +35,7 @@ function viewAllRoles() {
     connection.query('SELECT * FROM roles', (err, results) => {
       if (err) throw err;
       console.log("\n=== All Roles ===");
-      console.table(results); // Use console.table for formatting
+      console.table(results); 
       mainMenu();
     });
   }
@@ -45,7 +45,7 @@ function viewAllEmployees() {
     connection.query('SELECT * FROM employees', (err, results) => {
       if (err) throw err;
       console.log("\n=== All Employees ===");
-      console.table(results); // Use console.table for formatting
+      console.table(results); 
       mainMenu();
     });
   }
